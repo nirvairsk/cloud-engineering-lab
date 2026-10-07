@@ -15,3 +15,8 @@ variable "app_name" {
   type        = string
   default     = "shruti-appservice-poc"
 }
+variable "service_plan_name" {
+  description = "Azure App Service Plan name"
+  type        = string
+  default     = "asp-appservice-poc"
+}

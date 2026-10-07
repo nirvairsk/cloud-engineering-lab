@@ -16,7 +16,7 @@ resource "azurerm_resource_group" "app" {
 }
 
 resource "azurerm_service_plan" "app" {
-  name                = "asp-appservice-poc"
+  name                = var.service_plan_name
   resource_group_name = azurerm_resource_group.app.name
   location            = azurerm_resource_group.app.location
 
